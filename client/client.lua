@@ -9,6 +9,7 @@ Citizen.CreateThread(function()
             local FastTravelBlip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, v.coords)
             SetBlipSprite(FastTravelBlip, 784218150, 1)
             SetBlipScale(FastTravelBlip, 0.2)
+			Citizen.InvokeNative(0x9CB1A1623062F402, FastTravelBlip, v.name)
         end
     end
 end)
